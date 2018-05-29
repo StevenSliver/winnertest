@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="storage.UserStorage">
+
+    <select id="queryUserByPhone" resultType="model.User">
+        SELECT *
+        FROM user
+        WHERE
+        phone= #{phone}
+    </select>
+
+
+    <insert id="addUser">
+        INSERT INTO user (name,phone)
+        VALUES (#{name},#{phone})
+    </insert>
+
+</mapper>
