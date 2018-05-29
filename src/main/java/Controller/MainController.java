@@ -28,7 +28,7 @@ public class MainController  extends BaseController{
     public ModelAndView index(HttpServletRequest request, HttpServletResponse response) {
 
         User user = new User();
-        user.setName("sc");
+        user.setName("shichao");
         user.setPhone("15877915057");
         System.out.print("++++++++++++++++++++++"+user.toString());
         userService.addUser(user);
