@@ -33,11 +33,11 @@
             alert("asdfasdf");
         }
     </script>
-</head>>
+</head>
 <body>
 <h2>My Spring MVC Test Successed!</h2>
 
 <input type="button" value="json" onclick="requestByJson()" />
-<<input type="button" value="keyvalue" onclick="resquestByKV()">
+<input type="button" value="keyvalue" onclick="resquestByKV()">
 </body>
 </html>
