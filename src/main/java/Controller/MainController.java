@@ -76,7 +76,7 @@ public class MainController  extends BaseController{
     }
 
 
-    @RequestMapping("/jsonsource_1")
+    @RequestMapping(value = "/jsonsource_1",produces="application/json; charset=utf-8")
     public @ResponseBody User jsonSource_1(@RequestBody User user){
         String name = user.getName();
         String phong = user.getPhone();
