@@ -74,4 +74,17 @@ public class MainController  extends BaseController{
         logger.debug("=========phone="+user.getPhone());
         return user;
     }
+
+
+    @RequestMapping("/jsonsource_1")
+    public @ResponseBody User jsonSource_1(@RequestBody User user){
+        String name = user.getName();
+        String phong = user.getPhone();
+        logger.debug("=========name="+user.getName());
+        logger.debug("=========phone="+user.getPhone());
+        user.setName(name+"_change");
+        user.setPhone(phong+"_change");
+        return user;
+    }
+
 }
